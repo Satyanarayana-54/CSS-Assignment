@@ -1,97 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .g2{
-            color: darkslateblue;
-            background-color: burlywood;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Structure</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #4CAF50; /* Green */
+    }
+    .s4 {
+      border: 5px dashed #9C27B0; /* Deep Purple */
+      width: 800px;
+      background-color: #FF9800; /* Orange */
+      padding: 60px;
+      text-align: left;
+    }
+    .s3 {
+      border: 5px solid #03A9F4; /* Blue */
+      width: 700px;
+      background-color: #8BC34A; /* Light Green */
+      padding: 60px;
+      text-align: left;
+    }
+    .s2 {
+      border: 5px dashed #FF5722; /* Deep Orange */
+      width: 600px;
+      background-color: #3F51B5; /* Indigo */
+      padding: 60px;
+      text-align: left;
+    }
+    .s1 {
+      border: 3px solid #795548; /* Brown */
+      width: 400px;
+      background-color: #FFC107; /* Amber */
+      padding: 60px;
+      margin: auto;
+      text-align: left;
+    }
+    .my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+  </style>
 </head>
 <body>
-    
-    <center style="background-color: aquamarine;"><h1> RESUME</h1></center>
-    
-    <h4>📍 bhimavaram 9110566433 chintugubbala12@gmail.com</h4>
-    <hr>
-    <h2 class="g1"><u>Career Objective:</u></h2>
-    <p>To secure an entry-level position in a reputable organization where I can apply my academic knowledge and skills to contribute to the company's growth. As a recent graduate in [degree field], I am eager to learn and develop my skills in a dynamic and supportive environment. I am a quick learner, team player, and thrive in challenging situations. I aim to utilize my skills and enthusiasm to make a positive impact and grow with the organization.</p><br>
-    <hr>
-    <h2 id="el1"><u>Academic Qualification:</u></h2>
-    <table border="4" width="400">
-        <th>Course</th>
-        <th>Name of the School/college</th>
-        <th>Duration</th>
-        <th>Percentage/grade</th>
-        <tr>
-            <td>Degree bcom bachelor of commeres</td>
-            <td>D N R COLLEGE BHIMVARAM Degree College</td>
-            <td>2021-24</td>
-            <td>6.8</td>
-        </tr>
-        <tr>
-            <td>Board of Intermediate</td>
-            <td>D N R COLLEGE Junior College</td>
-            <td>2019-21</td>
-            <td>6.8</td>
-        </tr>
-        <tr>
-            <td>SSC</td>
-            <td>ZPH hight school Anakoderu</td>
-            <td>2019</td>
-            <td>7.8</td>
-        </tr>
-        
-        
-    </table>
-    <hr>
-    <h2 style="color: aquamarine;background-color: chocolate;"><u> Skills</u></h2>
-       
-    <ul>
-        <li><b>Markup Languages:</b>HTML,CSS</li>
-        <li><b>Software Tools:</b>MS Office</li>
-        <li><b>Soft Skills:</b>Problem Solving, critical thinking, adaptability, communication skills, Teamwork, self-motivated</li>
-    </ul>
-    <hr>
-    <h2 class="g2"><u>Strenths:</u></h2>
-    <ul>
-        <li>Quick learner</li>
-        <li>Hardworking</li>
-        <li>Optimist</li>
-    </ul>
-    <hr>
-    <h2 style="color: darkslategrey;background-color: coral;"><u>Achievements:</u></h2>
-    <ul>
-        <li>Won chess competition in mandal and district level</li>
-    </ul>
-    <hr>
-
-    
-    <h2 style="color: blueviolet; background-color: aqua;"><u>Personal Profile:</u></h2>
-    <ul>
-        <li>Name   :   G satyanarayana</li>
-        <li>Mother's Name  :  G vara lakshimi</li>
-        <li>Father's Nmae:    G srinu vasu</li>
-        <li>Date of Birth :  13/6/2004</li>
-        <li>Gender  : Male</li>
-        <li>Nationality  :  Indian</li>
-        <li>Lnaguages Known  :  Englis,telugu</li>
-        <li>Address  : H NO:1/170 BHIMAVARAM MANI ROAD ANAKODERU RAMALAYAM 534208</li>
-
-    </ul>
-    <hr>
-    <h2 style="color: brown;background-color: aquamarine;"><u>Declaration:</u></h2>
-    <p>I hereby declare that above mentioned information is corrct and up to the best of my knowledge
-        and i bear the responsibility for the correctness of above mentioned particulars.
-    </p>
-
-
-     
-    
-    
+  <h1 class="animate__animated animate__bounce">An animated element</h1>
+  <h1>Box Structure</h1>
+  <div class="s4">margin
+    <div class="s3">border
+      <div class="s2">padding
+        <div class="s1">content</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
